@@ -1,0 +1,1 @@
+Páginas legais do app Letrilha: Palavras Cruzadas (Droid Craft Works): [Política de Privacidade](https://rmeneghelo.github.io/letrilha-privacy/) · [Termos de Uso](https://rmeneghelo.github.io/letrilha-privacy/termos/).
