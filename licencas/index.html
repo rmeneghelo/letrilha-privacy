@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index">
+    <meta name="description" content="Licenças e créditos do dicionário do Letrilha: Palavras Cruzadas, da Droid Craft Works.">
+    <title>Licenças e Dicionário - Letrilha: Palavras Cruzadas</title>
+    <style>
+        :root { --bg: #ECE7DC; --card: #ffffff; --text: #1d1d1b; --muted: #3f3f3a; --accent: #1F6634; --line: #e2ddd1; }
+        @media (prefers-color-scheme: dark) {
+            :root { --bg: #161a17; --card: #1f2420; --text: #f1efe9; --muted: #d3d0c7; --accent: #8fd3a3; --line: #333a34; }
+        }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: var(--text); background-color: var(--bg); margin: 0; padding: 0; }
+        .container { max-width: 800px; margin: 40px auto; padding: 40px; background: var(--card); box-shadow: 0 4px 12px rgba(0,0,0,0.06); border-radius: 12px; }
+        h1 { font-size: 2rem; color: var(--accent); border-bottom: 2px solid var(--line); padding-bottom: 10px; margin-top: 0; }
+        h2 { font-size: 1.35rem; color: var(--accent); margin-top: 32px; }
+        p, li { font-size: 1rem; color: var(--muted); }
+        strong { color: var(--text); }
+        ul { padding-left: 20px; }
+        a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+        nav { font-size: 0.95rem; margin-bottom: 8px; }
+        .footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 0.9rem; color: var(--muted); text-align: center; }
+        @media (max-width: 600px) { .container { margin: 0; padding: 20px 16px; box-shadow: none; border-radius: 0; } h1 { font-size: 1.6rem; } }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <nav><a href="../">Política de Privacidade</a> · <a href="../termos/">Termos de Uso</a></nav>
+    <h1>Licenças e Dicionário do Letrilha</h1>
+    <p><strong>Última atualização: 8 de novembro de 2026</strong></p>
+    <p>O <strong>Letrilha: Palavras Cruzadas</strong>, da <strong>Droid Craft Works</strong>, usa uma lista ampla de palavras em português do Brasil para aceitar as <strong>palavras extras</strong> que você encontra além das palavras da fase. Essa lista foi construída a partir de dados abertos de terceiros. Esta página dá os créditos aos autores, descreve o que mudamos e disponibiliza a lista derivada.</p>
+
+    <h2>1. Projeto VERO / LibreOffice pt_BR</h2>
+    <p>Dicionário ortográfico Hunspell do português do Brasil (<code>pt_BR.dic</code> e <code>pt_BR.aff</code>), do <strong>Projeto VERO — Verificador Ortográfico do LibreOffice</strong>.</p>
+    <ul>
+        <li><strong>Autoria:</strong> Copyright &copy; 2006–2013 Raimundo Santos Moura e colaboradores da comunidade brasileira do LibreOffice. A relação completa dos colaboradores está na <a href="https://pt-br.libreoffice.org/projetos/projeto-vero-verificador-ortografico/">página do Projeto VERO</a>.</li>
+        <li><strong>Licença:</strong> GNU Lesser General Public License versão 3 (<a href="https://www.gnu.org/licenses/lgpl-3.0.html">LGPLv3</a>) e Mozilla Public License (<a href="https://www.mozilla.org/en-US/MPL/2.0/">MPL 2.0</a>).</li>
+        <li><strong>Fonte:</strong> <a href="https://github.com/LibreOffice/dictionaries/tree/master/pt_BR">LibreOffice/dictionaries — pt_BR</a>.</li>
+    </ul>
+
+    <h2>2. wordfreq</h2>
+    <p>Estimativas de frequência de palavras em português, usadas para manter só palavras de uso real.</p>
+    <ul>
+        <li><strong>Autoria:</strong> Robyn Speer — <a href="https://github.com/rspeer/wordfreq">wordfreq</a> (versão 3.1.1).</li>
+        <li><strong>Licença dos dados:</strong> Creative Commons Atribuição-CompartilhaIgual 4.0 Internacional (<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt_BR">CC BY-SA 4.0</a>).</li>
+        <li><strong>Fontes dos dados do wordfreq:</strong>
+            <ul>
+                <li>Google Books Ngrams</li>
+                <li>Wikipedia</li>
+                <li>Leeds Internet Corpus</li>
+                <li>ParaCrawl</li>
+                <li>OPUS OpenSubtitles</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>3. O que fizemos com esses dados</h2>
+    <p>A lista do Letrilha <strong>não é</strong> uma cópia dos dicionários originais. Aplicamos, nesta ordem:</p>
+    <ul>
+        <li>Remoção de entradas com espaço, hífen, apóstrofo ou ponto, de entradas marcadas como proibidas e de nomes próprios e siglas (entradas com letra maiúscula).</li>
+        <li>Expansão das regras de afixos do VERO (plurais, gênero, conjugações), sem as formas com pronome oblíquo (ênclise).</li>
+        <li>Remoção das formas verbais de 2ª pessoa do plural (<em>vós</em>).</li>
+        <li>Normalização para letras sem acento (por exemplo, <em>café</em> vira <em>cafe</em>), como o jogo compara as palavras, e corte para palavras de 3 a 8 letras.</li>
+        <li>Corte por frequência com o wordfreq (Zipf mínimo 1,25), para tirar palavras raras e ruído.</li>
+        <li>Remoção manual de nomes de pessoas e lugares, arcaísmos, lusitanismos e estrangeirismos, e remoção de termos ofensivos e suas flexões.</li>
+        <li>União com a lista de palavras das fases do próprio Letrilha.</li>
+    </ul>
+    <p>O resultado tem cerca de 51 mil palavras e é usado somente para validar palavras extras dentro do jogo.</p>
+
+    <h2>4. Baixar a lista derivada</h2>
+    <p>Conforme a licença CC BY-SA 4.0, a lista derivada é distribuída sob a mesma licença (<a href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt_BR">CC BY-SA 4.0</a>) e, na parte que vem do VERO, também sob <a href="https://www.mozilla.org/en-US/MPL/2.0/">MPL 2.0</a> / <a href="https://www.gnu.org/licenses/lgpl-3.0.html">LGPLv3</a>.</p>
+    <ul>
+        <li><a href="acceptance_words_pt_br.txt" download>acceptance_words_pt_br.txt</a> (texto simples, UTF-8, uma palavra por linha, ~390 KB)</li>
+    </ul>
+    <p>O código do aplicativo não é obra derivada desses dados e continua sendo de propriedade da Droid Craft Works.</p>
+
+    <h2>5. Textos das licenças</h2>
+    <ul>
+        <li><a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode.pt">Creative Commons Atribuição-CompartilhaIgual 4.0 Internacional (CC BY-SA 4.0)</a></li>
+        <li><a href="https://www.mozilla.org/en-US/MPL/2.0/">Mozilla Public License 2.0 (MPL 2.0)</a></li>
+        <li><a href="https://www.gnu.org/licenses/lgpl-3.0.html">GNU Lesser General Public License v3 (LGPLv3)</a></li>
+    </ul>
+
+    <h2>6. Contato</h2>
+    <p>Dúvidas ou correções sobre estes créditos: <a href="mailto:droidcraftworks@gmail.com">droidcraftworks@gmail.com</a>.</p>
+
+    <div class="footer">
+        &copy; 2026 Droid Craft Works · <a href="../">Política de Privacidade</a> · <a href="../termos/">Termos de Uso</a>
+    </div>
+</div>
+
+</body>
+</html>
